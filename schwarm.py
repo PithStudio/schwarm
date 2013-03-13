@@ -25,3 +25,14 @@ name_file = open(argv[2], "rbU")
 
 names = []
 for line in name_file:
+    if line.find("sampleID") == -1:
+        tab_index = line.find('\t')
+        names.append(line[0:tab_index])
+
+column_file = open(argv[3], "rbU")
+
+column_headers = []
+for line in column_file:
+    if line.find("subsetID") == -1:
+        tab_index = line.find('\t')
+        column_headers.append(line[0:tab_index])
