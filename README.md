@@ -1,3 +1,6 @@
 schwarm
 =======
-This project is for carrying out hierarchical clustering for gene expression and displaying the resulting dendrogram and heat map.
+This project is intended to automate much of the work that goes into using the
+numpy + scipy + matplotlib stack for researchers so that they may simply pass
+in data and receive an image file with the resulting clustered heatmap and 
+dendrograms.
